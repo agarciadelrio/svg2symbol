@@ -1,14 +1,14 @@
 {
   "name": "@agarciadelrio/svg2symbol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-performance CLI and API to convert and manage SVG icons as <symbol> in a single SVG sprite",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
-    "svg2symbol": "./dist/cli.js",
-    "svg-symbol": "./dist/cli.js"
+    "svg2symbol": "dist/cli.js",
+    "svg-symbol": "dist/cli.js"
   },
   "files": [
     "dist",

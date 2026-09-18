@@ -15,7 +15,7 @@ export async function runCli(): Promise<void> {
   const args = process.argv.slice(2);
 
   if (args.includes("-v") || args.includes("--version")) {
-    console.log("svg2symbol v1.0.0");
+    console.log("svg2symbol v1.0.1");
     process.exit(0);
   }
 
