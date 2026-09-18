@@ -1,0 +1,49 @@
+{
+  "name": "@agarciadelrio/svg2symbol",
+  "version": "1.0.0",
+  "description": "High-performance CLI and API to convert and manage SVG icons as <symbol> in a single SVG sprite",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "svg2symbol": "./dist/cli.js",
+    "svg-symbol": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --target=node --outfile=dist/index.js && bun build src/index.ts --target=node --format=esm --outfile=dist/index.mjs && bun build src/cli.ts --target=node --outfile=dist/cli.js && bun x tsc --emitDeclarationOnly",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "svg",
+    "symbol",
+    "sprite",
+    "icons",
+    "svg-sprite",
+    "cli",
+    "bun",
+    "daisyui",
+    "tailwind"
+  ],
+  "author": "agarciadelrio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agarciadelrio/svg2symbol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agarciadelrio/svg2symbol/issues"
+  },
+  "homepage": "https://github.com/agarciadelrio/svg2symbol#readme",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.0.0",
+    "typescript": "^7"
+  }
+}
